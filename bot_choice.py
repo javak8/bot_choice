@@ -153,23 +153,3 @@ class BotChoice(Plugin):
                 return True
         return False
 
-
-    def download_file(self, url, suffix):
-        """
-        下载文件到本地
-        :param url: 文件的URL
-        """
-        try:
-            response = requests.get(url)
-            if response.status_code == 200:
-                # 提取文件名
-                file_name = str((datetime.datetime.now().microsecond)) + '.' + suffix
-                # 创建临时文件
-                with open(file_name, 'wb') as file:
-                    file.write(response.content)
-                return file_name
-            else:
-                return None
-        except Exception as e:
-            print(f"下载文件时发生异常: {e}")
-            return None
