@@ -15,7 +15,7 @@ from plugins import *
     name="BotChoice",
     desire_priority=88,
     hidden=False,
-    desc="测试",
+    desc="根据不同关键词调用对应任务型model或bot",
     version="0.0.1",
     author="KevinZhang",
 )
