@@ -153,3 +153,13 @@ class BotChoice(Plugin):
                 return True
         return False
 
+    def _load_config_template(self):
+        logger.debug("No Suno plugin config.json, use plugins/jina_sum/config.json.template")
+        try:
+            plugin_config_path = os.path.join(self.path, "config.json.template")
+            if os.path.exists(plugin_config_path):
+                with open(plugin_config_path, "r", encoding="utf-8") as f:
+                    plugin_conf = json.load(f)
+                    return plugin_conf
+        except Exception as e:
+            logger.exception(e)
