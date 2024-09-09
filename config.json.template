@@ -1,9 +1,9 @@
 {
   "max_words":1000,
  "bot_list":[
-    {"url":"http://10.75.190.8:2029/v1","keyword":"/视频文案", "model":"视频文案","key": "pat_5Dd0BYoD3Bm5vhRsrYKHLZVU9pHbz8dZI0O0TMkw0WNRUPaY3IkxQavE1WUPwTK4"},
-   {"url":"http://10.75.190.8:2029/v1","keyword":"/热点文案", "model":"热点文案","key": "pat_5Dd0BYoD3Bm5vhRsrYKHLZVU9pHbz8dZI0O0TMkw0WNRUPaY3IkxQavE1WUPwTK4"},
-   {"url":"http://10.75.190.8:2029/v1","keyword":"/搜图片", "model":"搜图片","key": "pat_5Dd0BYoD3Bm5vhRsrYKHLZVU9pHbz8dZI0O0TMkw0WNRUPaY3IkxQavE1WUPwTK4"}
+    {"url":"http://xxxx/v1","keyword":"/视频文案", "model":"视频文案","key": "pat_5Dd1WUPwTK4"},
+   {"url":"http://xxxxx/v1","keyword":"/热点文案", "model":"热点文案","key": "pat_5Dd0BYoD3Bm5vWUPwTK4"},
+   {"url":"http://xxxxx/v1","keyword":"/搜图片", "model":"搜图片","key": "pat_5DdPwTK4"}
  ],
   "short_help_text": "发送特定指令以调度不同任务的bot！",
   "long_help_text":  "📚 发送关键词执行任务bot！\n🎉 娱乐与资讯：\n🌅 搜图: 发送“/搜图片 xxx”搜索你想要的图片。\n🐟 视频文案: 发送“/视频文案 链接地址”解析视频文案。\n🔥 文章: 发送“/文章 话题”生成爆款文案。\n"
