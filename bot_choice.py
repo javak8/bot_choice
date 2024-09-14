@@ -49,6 +49,22 @@ class BotChoice(Plugin):
         return self.long_help_text
 
     def on_handle_context(self, e_context: EventContext, retry_count: int = 0):
+        context = e_context["context"]
+        content = context.content
+
+        if context.type != ContextType.TEXT:
+            return
+
+        keyword_list = [bot["keyword"] for bot in self.bot_list]
+        is_return = True
+
+        for keyword in keyword_list:
+            if keyword in content:
+                is_return = False
+                break
+        if is_return:
+            return
+            
         try:
             context = e_context["context"]
             msg:ChatMessage = context["msg"]
