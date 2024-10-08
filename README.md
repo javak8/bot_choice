@@ -1,5 +1,5 @@
 # bot_choice
-ChatGPT on WeChat项目插件, 根据提示词调用不同bot/model,可以实现多指令执行
+BotChoice项目插件, 根据提示词调用不同bot/model,可以实现多指令执行
 
 目前bot/model只支持openai接口规范
 
